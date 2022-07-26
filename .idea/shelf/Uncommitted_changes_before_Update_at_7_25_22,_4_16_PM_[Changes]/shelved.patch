@@ -1,0 +1,17 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\n\ndef print_hi(name):\n    # Use a breakpoint in the code line below to debug your script.\n    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.\n\nif __name__ == '__main__':\n    print_hi('PyCharm')\n\n
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	
++++ b/main.py	
+@@ -1,7 +1,7 @@
+ 
+ 
+ def print_hi(name):
+-    # Use a breakpoint in the code line below to debug your script.
++
+     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+ 
+ if __name__ == '__main__':
