@@ -2,22 +2,25 @@ from random import randint, randrange
 
 
 class Cube:
-    edge = randint(6, 12)
+    edge = 0
     b = []
 
-    def status_cube(self):
-        edge = Cube.edge
-        print(f'You have a {edge} grain cube')
-
     def throw(self):
-        edge = Cube.edge
-        b = Cube.b
-        for i in range(1, edge+1):
-            b.append(i)
-        my_range = randrange(len(b))
-        print(f'After the roll, you dropped a edge with the number {my_range}')
+        print(f'You have a {self.edge} grain cube')
 
+        for i in range(1, self.edge + 1):
+            self.b.append(i)
 
+        my_range = randrange(len(self.b))
+        print(f'After the roll, you dropped a edge with the number {my_range}\n')
+
+# Cube 1
 throw1 = Cube()
-throw1.status_cube()
+throw1.edge = randint(6, 12)
 throw1.throw()
+
+# Cube 2
+throw2 = Cube()
+throw2.edge = randint(6, 12)
+throw2.throw()
+
