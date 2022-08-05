@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="150fa568-d736-4e4a-99bd-d8f8faa269e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/In_work/BlackJack.py" afterDir="false" />
+    <list default="true" id="150fa568-d736-4e4a-99bd-d8f8faa269e7" name="Changes" comment="add BlackJack.py">
+      <change afterPath="$PROJECT_DIR$/In_work/Homework-Mystery.ipynb - Colaboratory.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/In_work/Quiz.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,16 +40,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kirill/PycharmProjects/TMS_Hometask&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/kirill/PycharmProjects/TMS_Hometask/In_work"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/In_work" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Learning" />
+      <recent name="$PROJECT_DIR$/Done" />
+      <recent name="$PROJECT_DIR$/In_work" />
     </key>
   </component>
   <component name="RunManager" selected="Python.BlackJack">
@@ -190,7 +197,35 @@
       <option name="project" value="LOCAL" />
       <updated>1658855391667</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add BlackJack.py">
+      <created>1659708646811</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659708646811</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add BlackJack.py">
+      <created>1659708717113</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659708717113</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refactor folder">
+      <created>1659708816986</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659708816986</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add BlackJack.py">
+      <created>1659708910526</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659708910526</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,18 +260,20 @@
     <MESSAGE value="First commit &quot;add file&quot;" />
     <MESSAGE value="add in master branch" />
     <MESSAGE value="add homework with the cube (OOP)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add homework with the cube (OOP)" />
+    <MESSAGE value="Refactor folder" />
+    <MESSAGE value="add BlackJack.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add BlackJack.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/OOP_test4.py</url>
+          <url>file://$PROJECT_DIR$/Done/Cube.py</url>
           <line>4</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/OOP_test4.py</url>
+          <url>file://$PROJECT_DIR$/Done/Cube.py</url>
           <line>23</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
