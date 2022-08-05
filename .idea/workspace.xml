@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="150fa568-d736-4e4a-99bd-d8f8faa269e7" name="Changes" comment="add BlackJack.py">
-      <change afterPath="$PROJECT_DIR$/In_work/Homework-Mystery.ipynb - Colaboratory.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/In_work/Quiz.py" afterDir="false" />
+    <list default="true" id="150fa568-d736-4e4a-99bd-d8f8faa269e7" name="Changes" comment="add Quiz">
+      <change beforePath="$PROJECT_DIR$/In_work/Quiz.py" beforeDir="false" afterPath="$PROJECT_DIR$/In_work/Quiz.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
       <recent name="$PROJECT_DIR$/In_work" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.BlackJack">
+  <component name="RunManager" selected="Python.Quiz">
     <configuration name="BlackJack" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TMS_Hometask" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,27 +92,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Done/Cube.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="OOP_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TMS_Hometask" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Learning/OOP_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,13 +142,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Quiz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TMS_Hometask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/In_work" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/In_work/Quiz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Quiz" />
         <item itemvalue="Python.BlackJack" />
         <item itemvalue="Python.Cube" />
         <item itemvalue="Python.OOP_test3" />
         <item itemvalue="Python.OOP_test2" />
-        <item itemvalue="Python.OOP_test" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659708910526</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add Quiz">
+      <created>1659709166280</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659709166280</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,7 +268,8 @@
     <MESSAGE value="add homework with the cube (OOP)" />
     <MESSAGE value="Refactor folder" />
     <MESSAGE value="add BlackJack.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="add BlackJack.py" />
+    <MESSAGE value="add Quiz" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Quiz" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
