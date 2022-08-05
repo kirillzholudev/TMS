@@ -1,3 +1,4 @@
+# игральный кубик
 from random import randint, randrange
 
 
