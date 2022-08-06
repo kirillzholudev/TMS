@@ -1,42 +1,35 @@
+
+
 class Quiz:
-    def __init__(self):
-        self.quest = quest
-        self.choices = choices
-        self.question()
-        self.choice()
-        self.answer(self.ans)
+    def __init__(self, name='User', vopr=[], otv=[], var=[]):
+        self.name = name
+        self.vopr = vopr
+        self.otv = otv
+        self.var = var
+        print(f'Привет, {name}\n')
+        self.vopros()
+        self.otvet()
 
-    def question(self, que=1):
-        self.que = que
-        print(self.quest[self.que])
+    def vopros(self):
+        print(f'Твой вопрос звучит так: {self.vopr}\n')
+        print(f'Варианты ответов: \n {self.var}\n')
 
-    def choice(self):
-        for i in choices:
-            print(i,':', choices[i])
-        self.ans = input('Ваш ответ: ')
-
-    def answer(self, ans):
-
-        if ans == sel[1]:
-            print("OK")
+    def otvet(self):
+        ch = input('-->')
+        if ch in self.otv:
+            print('Ты лучший!')
         else:
-            print("NOK")
+            print('Попробуй еще раз')
+            return self.otvet()
 
 
 
-
-quest = {
-    1: "Откуда на Беларусь готовилось нападение?"}
-
-choices = {
-    1: "Откуда мне знать?",
-    2: "Со склада грязи.",
-    3: "С планеты Нибиру.",
-    4: "С загнивающег запада.",
-    5: 'Там 4 позиции, я карту принёс, сейчас покажу.'}
-
-sel = {
-    1: '5'
-}
-
-q1 = Quiz()
+a1 = Quiz(vopr="Откуда на Беларусь готовилось нападение?",
+otv="там 4 позиции, я карту принёс, сейчас покажу",
+var=[
+"Откуда мне знать?",
+"Со склада грязи.",
+"С планеты Нибиру.",
+"С загнивающег запада.",
+"Там 4 позиции, я карту принёс, сейчас покажу"
+])
