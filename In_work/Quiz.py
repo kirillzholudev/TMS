@@ -40,8 +40,11 @@ quiz_3 = Mystery("When was Netflix founded?", "1997",
 
 print(quiz_1)
 print(quiz_1.check())
+
 print(quiz_2)
 print(quiz_2.check())
+
 print(quiz_3)
 print(quiz_3.check())
+
 print(f"Youre score --> {Mystery.points} ")
