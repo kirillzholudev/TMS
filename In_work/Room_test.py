@@ -49,25 +49,21 @@ class Room:
         total_roll = self.new_square / roll_square
         return f'You need {ceil(total_roll)} roll'
 
-    # print("Choices:\n "
-    #       "1: Add room parameters\n"
-    #       "2: Add")
 
-class Actions:
-    def first():
-        print('Add the room parameters first')
-        ch1 = float(input("Length of room: "))
-        ch2 = float(input("Width of room: "))
-        ch3 = float(input("Height of room: "))
-        room_1 = Room(ch1, ch2, ch3)
-        print("Square of room: ", room_1.square)
+"""Program interface"""
 
-Actions.first()
+print('Add the room parameters first')
+ch1 = float(input("Length of room: "))
+ch2 = float(input("Width of room: "))
+ch3 = float(input("Height of room: "))
+room_1 = Room(ch1, ch2, ch3)
+print("Square of room: ", room_1.square)
 
 while True:
     print("CHOICES:\n"
           "1. Add Windows or Doors\n"
-          "2. Change sides of the room")
+          "2. Change sides of the room\n"
+          "3. Calculate the amount of wallpaper")
     choice = input()
 
     if choice == '1':
@@ -76,25 +72,16 @@ while True:
         name = input("Name of door or window: ")
         room_1.addWD(w, h, name)
         print(room_1.wd)
+        print(room_1.workSurface())
 
     if choice == '2':
-        Actions.first()
+        pass
 
-
+    if choice == '3':
+        print('The area to wallpaper:', room_1.workSurface())
+        dl = float(input('Roll length '))
+        sh = float(input('Roll width '))
+        print(room_1.wallpaper(dl, sh))
+        break
     else:
         break
-
-
-
-# room_1 = Room(5.5, 3, 2.75)
-# print(room_1.square)
-#
-# room_1.addWD(1.5, 1.5, 'big_win')
-# room_1.addWD(1, 2, 'Fiodoor')
-# room_1.addWD(0.20, 0.40, 'schel')
-#
-# print(room_1.wd)
-#
-# print(room_1.workSurface())
-#
-# print(room_1.wallpaper(10, 1))
