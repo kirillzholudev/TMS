@@ -39,41 +39,38 @@ CHOISE = [
     {"3": 3}
 
 ]
+LOC = {'id': 0
+    }
+
 
 class Hero:
     """Возможности героя"""
 
-    def __init__(self):
-        self.loc = ROOMS[0]['id']
-
+    def __init__(self, name):
+        self.name = name
+        self.loc = LOC
+        self.choise()
 
     def location(self):
         pass
 
-
     def around_hero(self):
-        print(f'Вы находитесь в: {self.loc}')
-
-
-    def choise(self, a):
-
         pass
 
 
+    def choise(self):
+        inp = input("Choces: ")
+        for i in range(len(ROOMS)):
+            for inp in ROOMS:
+                print(ROOMS[i]['doors'])
 
-hero1 = Hero()
 
 
 
 
-work = True
-while work:
-    print('Варинаты:\n'
-          '1. Осмотрется\n'
-          'Ваш выбор:')
-    inp = input()
-    if inp == 1:
-        hero1.around_hero()
+hero1 = Hero('Kiryl')
+hero1()
+
 
 
 
