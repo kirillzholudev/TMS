@@ -72,10 +72,14 @@ while True:
         name = input("Name of door or window: ")
         room_1.addWD(w, h, name)
         print(room_1.wd)
-        print(room_1.workSurface())
+        print('Work area: ', room_1.workSurface())
+        continue
 
     if choice == '2':
-        pass
+        print("*** *** ***\n "
+              "This part of the programme is still not working."
+              "\n*** *** ***\n")
+        continue
 
     if choice == '3':
         print('The area to wallpaper:', room_1.workSurface())
