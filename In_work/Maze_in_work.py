@@ -1,102 +1,40 @@
-ROOMS = [
+LEVEV1 = [
     {
         "id": "room-1",
-        "name": "Your room",
-        "doors": {1: "room-2", 2: "room-6"}
-
-    },
-    {
-        "id": "room-2",
-        "name": "Dark room",
-        "doors": ["room-3", "room-4"]
-    },
-    {
-        "id": "room-10",
-        "name": "Exiting the labyrinth",
-        "doors": []
-    },
-    {
-        "id": "room-1",
-        "name": "Your room",
-        "doors": {1: "room-2", 2: "room-6"}
-
+        "name": "Ominous Dark Room",
+        "doors": ["room-6", "room-2", "room-10"]
     },
     {
         "id": "room-6",
-        "name": " ",
+        "name": "Your room (clean up)",
         "doors": ["room-1", "room-10", "room-5"]
     },
     {
         "id": "room-10",
         "name": "Exiting the labyrinth",
-        "doors": []
+        "doors": ['room-7', 'room-8', 'room-11']
     }
 ]
-
-CHOISE = [
-    {"1": 1},
-    {"2": 2},
-    {"3": 3}
-
-]
-
-class Hero:
-    """Возможности героя"""
-
-    def __init__(self):
-        self.loc = ROOMS[0]['id']
-
-
-    def location(self):
-        pass
-
-
-    def around_hero(self):
-        print(f'Вы находитесь в: {self.loc}')
-
-
-    def choise(self, a):
-
-        pass
+CHOICE1 = []
 
 
 
-hero1 = Hero()
+class Start:
+    def choices(self):
+        for i in range(len(LEVEV1)):
+            print(LEVEV1[i]['doors'])
+            inp = input('Which room? ')
+            for inp in LEVEV1:
 
+                print('You in', LEVEV1[i]['id'])
 
+            total = 1
+            for i in range(total):
+                if inp in LEVEV1[i]['id']:
+                    print('ok')
+                    total += 1
+                else:
+                    continue
 
-
-work = True
-while work:
-    print('Варинаты:\n'
-          '1. Осмотрется\n'
-          'Ваш выбор:')
-    inp = input()
-    if inp == 1:
-        hero1.around_hero()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+t1 = Start()
+t1.choices()
