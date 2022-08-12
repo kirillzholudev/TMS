@@ -1,15 +1,8 @@
-l = 5.5   # длина
-w = 3     # ширина
-h = 2.75  # высота
+from math import ceil
 
-l_w = 10
-w_w = 1
-
-s_1 = (l + w) * 2
-lanes = s_1 / w_w
-lanes_in_1 = l_w // (h + 0.1)  # без обрезков (только целе полосы)
-sum_roll = s_1 / lanes_in_1
-
+sides = {"Length": 0,
+         "Width": 0,
+         "Height": 0}
 
 
 class WinDoor:
@@ -23,53 +16,85 @@ class WinDoor:
         return f'{self.name} {self.x}x{self.y}'
 
 
-door = WinDoor(0.9, 3.14, 'PiDoor')
-
-
 class Room:
     def __init__(self, x, y, z):
-        self.square = z * (x + y)
+        self.square = 2 * z * (x + y)
+        self.new_square = 0
         self.wd = []
-        self.sides = []
+        self.sides = sides
         self.x = x
         self.y = y
         self.z = z
-        self.addSides()
+        self.printSides()
 
-    def addSides(self):
-        self.sides.append(WinDoor((self.z, self.x, self.y)))
+    def printSides(self):
+        sides['Length'] = self.x
+        sides['Width'] = self.y
+        sides['Height'] = self.z
+        print('Room size:\n')
+        for key, value in sides.items():
+            print("{0}: {1}".format(key, value))
 
     def addWD(self, w, h, name='unk'):
         self.wd.append(WinDoor(w, h, name))
 
     def workSurface(self):
-        new_square = self.square
+        self.new_square = self.square
         for i in self.wd:
-            new_square -= i.square
-        return new_square
+            self.new_square -= i.square
+        return self.new_square
 
-    def wallpaper(self, dl, sh):      # Length and width of the roll
-        size = (self.x + self.y) * 2
-        lines = dl // (self.z + 0.1)
-        total_roll = size / lines
-        return f'You need {round(total_roll)} roll'
+    def wallpaper(self, dl, sh):  # Length and width of the roll
+        roll_square = dl * sh
+        total_roll = self.new_square / roll_square
+        return f'You need {ceil(total_roll)} roll'
+
+    # print("Choices:\n "
+    #       "1: Add room parameters\n"
+    #       "2: Add")
+
+class Actions:
+    def first():
+        print('Add the room parameters first')
+        ch1 = float(input("Length of room: "))
+        ch2 = float(input("Width of room: "))
+        ch3 = float(input("Height of room: "))
+        room_1 = Room(ch1, ch2, ch3)
+        print("Square of room: ", room_1.square)
+
+Actions.first()
+
+while True:
+    print("CHOICES:\n"
+          "1. Add Windows or Doors\n"
+          "2. Change sides of the room")
+    choice = input()
+
+    if choice == '1':
+        w = float(input("Width of door or window: "))
+        h = float(input("Height of door or window: "))
+        name = input("Name of door or window: ")
+        room_1.addWD(w, h, name)
+        print(room_1.wd)
+
+    if choice == '2':
+        Actions.first()
+
+
+    else:
+        break
 
 
 
-
-
-room_1 = Room(5.5, 3, 2.75)
-print(room_1.square)
-
-room_1.addWD(1.5, 1.5, 'big_win')
-room_1.addWD(1, 2, 'Fiodoor')
-room_1.addWD(0.20, 0.40, 'schel')
-print(room_1.wd)
-print(room_1.square())
-
-
-print(room_1.workSurface())
-
-print(room_1.wallpaper(10, 1))
-
-
+# room_1 = Room(5.5, 3, 2.75)
+# print(room_1.square)
+#
+# room_1.addWD(1.5, 1.5, 'big_win')
+# room_1.addWD(1, 2, 'Fiodoor')
+# room_1.addWD(0.20, 0.40, 'schel')
+#
+# print(room_1.wd)
+#
+# print(room_1.workSurface())
+#
+# print(room_1.wallpaper(10, 1))
