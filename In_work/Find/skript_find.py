@@ -12,4 +12,4 @@ def searchinfile(path: str, word: str, encoding: str):
     return f"Your word list is in the files (quantity: {len(confirmed_files)}): {confirmed_files}."
 
 
-print(searchinfile("test", "Агафья", "windows-1251"))
+print(searchinfile("books", "Привет", "windows-1251"))

@@ -39,6 +39,6 @@ class SearchWordInFile:
                f"\nFiles with unknown encoding (quantity: {len(self.errordecode)}): {self.errordecode}."
 
 
-my_books = SearchWordInFile("test", ["Hello"])
+my_books = SearchWordInFile("books", ["Ночь"])
 
 print(my_books)
